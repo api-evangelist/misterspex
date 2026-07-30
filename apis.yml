@@ -1,7 +1,27 @@
 aid: misterspex
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/misterspex.png
 name: MisterSpex
-description: MisterSpex is a company surfaced as a portfolio company of point-nine and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Mister Spex SE is a European online-first eyewear and optical retailer selling
+  prescription glasses, sunglasses, and contact lenses across more than 100 premium,
+  luxury, independent, and private-label brands. Founded in Berlin in 2007 and listed
+  on the Frankfurt Stock Exchange, the company serves more than 8 million customers
+  online in five countries and operates 65 stores in Germany plus a network of over
+  300 partner opticians. It was surfaced as a portfolio company of Point Nine and
+  added to the API Evangelist network; the company publishes no public consumer or
+  developer API, so this profile captures corporate identity and security-surface
+  artifacts derived from live probes rather than an API catalog.
 url: https://raw.githubusercontent.com/api-evangelist/misterspex/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Eyewear
+- Glasses
+- Sunglasses
+- Contact Lenses
+- Optician
+- E-Commerce
+- Retail
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +49,25 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://www.misterspex.de
+  url: https://www.misterspex.de
+- type: GitHubOrganization
+  url: https://github.com/MisterSpex
+- type: Blog
+  url: https://corporate.misterspex.com/en/media/
+- type: Support
+  url: https://corporate.misterspex.com/en/career/
+- type: DomainSecurity
+  url: security/misterspex-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/misterspex-vulnerability-disclosure.yml
+- type: Security
+  url: security/misterspex-vulnerability-disclosure.yml
+- type: SecurityTxt
+  url: well-known/misterspex-security.txt
+- type: WellKnown
+  url: well-known/misterspex-well-known.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
