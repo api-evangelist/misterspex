@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: probed
+source: live probes of /.well-known/* on MisterSpex production hosts
+host: www.misterspex.de
+endpoints:
+- path: /.well-known/security.txt
+  status: 200
+  file: misterspex-security.txt
+  type: SecurityTxt
+- path: /.well-known/openid-configuration
+  status: 403
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 403
+  file: null
+- path: /.well-known/api-catalog
+  status: 403
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 403
+  file: null
