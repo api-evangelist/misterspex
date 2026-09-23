@@ -19,3 +19,17 @@ endpoints:
 - path: /.well-known/ai-plugin.json
   status: 403
   file: null
+hosts:
+- host: www.misterspex.de
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: misterspex-security.txt
+    type: SecurityTxt
+x-shape-fix:
+  converted: '2026-08-20'
+  from: endpoints
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent. Promoted ONLY the 2xx rows out of
+    the probe log; non-2xx probes are real negative results and were left in place, not converted into
+    documents.
